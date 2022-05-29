@@ -1,4 +1,4 @@
-$color: rgb(2, 2, 2);
+$color: rgb(205, 238, 15);
 body{
     background: rgb(192, 103, 192);
     font-size: 14px;
@@ -62,13 +62,13 @@ header
     .main-header{        
         img{
             max-width: 100%;
-            width: 150px;
+            width: 100px;
             height: 100px;
         }
         .card-body{
-            font-size:19px;
+            font-size:5px;
             padding: 0px 0;
-        }       
+        }     
     }
     .menu-header{
         margin-top: 0px;
