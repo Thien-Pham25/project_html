@@ -1,0 +1,134 @@
+$color: rgb(2, 2, 2);
+body{
+    background: rgb(192, 103, 192);
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    .slide-show{
+        margin-top: 20px;
+        img{
+            max-width: 100%;
+            width: 500px;
+            height: 515px;
+        }  
+    }
+        
+}
+img{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}  
+
+
+
+a{
+    text-decoration: none;  
+    &:hover{
+        text-decoration: none;
+    }
+
+}
+ul, li
+{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+}
+.box-footer{
+    margin-left: 30px;
+}
+header
+{
+    .top-header
+    {
+        font-size:large;      
+        color: rgb(2, 2, 2);
+        padding: 3px 0;
+        p{
+            margin-bottom: 0;
+            line-height: 35px;
+            font-size:large;
+        }
+        .social{
+            a{
+                i{
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    border-radius: 50%;
+                    border: 1px solid $color;
+                }
+            }
+        }
+    }
+    .main-header{        
+        img{
+            max-width: 100%;
+            width: 100px;
+            height: 100px;
+        }
+        .card-body{
+            font-size:5px;
+            padding: 0px 0;
+        }     
+    }
+    .menu-header{
+        margin-top: 0px;
+        ul
+        {
+            li
+            {
+                display: inline-block;
+                transition: all .3s;
+                position: relative;
+                ul{
+                    position: absolute;
+                    width: 150px;
+                    background: $color;
+                    left: 0;
+                    top: 80px;
+                    text-align: left;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .3s;
+                    z-index: 99;
+                    li{
+                        display: block;
+                        a{
+                            display: block;
+                            text-transform: inherit;
+                            padding: 5px;
+                            border-bottom: dashed 1px #ededed;
+                        }
+                    }
+                }
+                a{
+                    font-size: large;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    text-transform: uppercase;
+                    color: #fff ;
+                }           
+                &.active{         
+                    a{
+                        background: $color;
+                    }
+                }
+                &:hover{
+                    transition: all .3s;
+                    a{
+                    background: $color;
+                    }
+                    ul{
+                        opacity: 1;
+                        visibility: visible;
+                        top: 40px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
